@@ -25,16 +25,6 @@ func printSlice(slice []int, numItems int) {
 	}
 }
 
-func checkSorted(slice []int) {
-	for i := 0; i < len(slice)-1; i++ {
-		if slice[i] > slice[i+1] {
-			fmt.Println("The slice is NOT sorted!")
-			return
-		}
-	}
-	fmt.Println("The slice is sorted")
-}
-
 // Perform linear search.
 // Return the target's location in the slice and the number of tests.
 // If the item is not found, return -1 and the number tests.
